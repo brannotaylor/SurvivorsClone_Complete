@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bchrn4nx6vpt1"]
+
+[ext_resource type="Script" path="res://Utility/spawn.gd" id="1_2pmfk"]
+
+[node name="test" type="Node"]
+script = ExtResource("1_2pmfk")

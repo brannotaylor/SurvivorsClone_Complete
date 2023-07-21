@@ -1,11 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://chx2gkfouwc34"]
+[gd_scene load_steps=2 format=3 uid="uid://ba2claihwes2y"]
 
-[ext_resource type="Script" path="res://Utility/enemy_spawner.gd" id="1_0hs40"]
+[ext_resource type="Script" path="res://Utility/enemy_spawner.gd" id="1_pkvpv"]
 
-[node name="Enemy_spawner" type="Node2D"]
-y_sort_enabled = true
-script = ExtResource("1_0hs40")
-spawns = []
+[node name="EnemySpawner" type="Node2D"]
+script = ExtResource("1_pkvpv")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true

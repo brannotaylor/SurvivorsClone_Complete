@@ -1,5 +1,6 @@
 extends Node
 
+
 const ICON_PATH = "res://Textures/Items/Upgrades/"
 const WEAPON_PATH = "res://Textures/Items/Weapons/"
 const UPGRADES = {
@@ -252,3 +253,4 @@ const UPGRADES = {
 		"type": "item"
 	}
 }
+

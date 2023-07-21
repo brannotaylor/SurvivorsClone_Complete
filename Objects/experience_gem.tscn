@@ -1,31 +1,27 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddr8dmffw83xe"]
+[gd_scene load_steps=5 format=3 uid="uid://d20r3gqas2kms"]
 
-[ext_resource type="Script" path="res://Objects/experience_gem.gd" id="1_iekc4"]
-[ext_resource type="Texture2D" uid="uid://dxlo5rot6mufb" path="res://Textures/Items/Gems/Gem_green.png" id="2_5v8ip"]
-[ext_resource type="AudioStream" uid="uid://dfiqsr4b5cr5v" path="res://Audio/SoundEffect/collectgem.mp3" id="3_o2vev"]
+[ext_resource type="Texture2D" uid="uid://c2kvist0kqcew" path="res://Textures/Items/Gems/Gem_green.png" id="1_glkr3"]
+[ext_resource type="Script" path="res://Objects/experience_gem.gd" id="1_k4pfj"]
+[ext_resource type="AudioStream" uid="uid://bnm8cttqwefdx" path="res://Audio/SoundEffect/collectgem.mp3" id="3_g1t57"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_eer8y"]
-size = Vector2(8, 10)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wytta"]
+size = Vector2(20, 22)
 
-[node name="Expierence_Gem" type="Area2D" groups=["loot"]]
+[node name="ExperienceGem" type="Area2D" groups=["loot"]]
+scale = Vector2(0.5, 0.5)
 collision_layer = 8
-collision_mask = 8
-script = ExtResource("1_iekc4")
-experience = 5
+collision_mask = 0
+script = ExtResource("1_k4pfj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_glkr3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -1)
-shape = SubResource("RectangleShape2D_eer8y")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_5v8ip")
-
-[node name="Timer" type="Timer" parent="."]
+shape = SubResource("RectangleShape2D_wytta")
 
 [node name="snd_collected" type="AudioStreamPlayer" parent="."]
-process_mode = 3
-stream = ExtResource("3_o2vev")
+stream = ExtResource("3_g1t57")
 volume_db = -10.0
 
 [connection signal="finished" from="snd_collected" to="." method="_on_snd_collected_finished"]

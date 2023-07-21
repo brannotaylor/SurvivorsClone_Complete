@@ -1,0 +1,17 @@
+res://World/world.tscn
+res://Player/player.tscn
+res://Enemy/enemy_kobold_weak.tscn
+res://Utility/enemy_spawner.tscn
+res://Enemy/enemy_kobold_strong.tscn
+res://Enemy/enemy_juggernaut.tscn
+res://Enemy/enemy_super.tscn
+res://Enemy/enemy_cyclops.tscn
+res://Utility/basic_button.tscn
+res://TitleScreen/menu.tscn
+res://Utility/hit_box.tscn
+res://Utility/hurt_box.tscn
+res://Utility/item_option.tscn
+res://Player/GUI/item_container.tscn
+res://Utility/upgrade_db.tscn
+res://Objects/experience_gem.tscn
+res://Player/Attack/javelin.tscn

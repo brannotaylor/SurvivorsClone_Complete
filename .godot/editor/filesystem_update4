@@ -1,3 +1,7 @@
+res://Utility/hit_box.tscn
+res://Utility/hit_box.gd
+res://Utility/hurt_box.tscn
+res://Utility/hurt_box.gd
 res://World/world.tscn
 res://Player/player.tscn
 res://Enemy/enemy_kobold_weak.tscn
@@ -8,8 +12,6 @@ res://Enemy/enemy_super.tscn
 res://Enemy/enemy_cyclops.tscn
 res://Utility/basic_button.tscn
 res://TitleScreen/menu.tscn
-res://Utility/hit_box.tscn
-res://Utility/hurt_box.tscn
 res://Utility/item_option.tscn
 res://Player/GUI/item_container.tscn
 res://Utility/upgrade_db.tscn
